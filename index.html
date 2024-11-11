@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Querida Mayrin.</strong>
+                        <p>
+                            Esta es la primera página que puedo subir de alguna forma en la red, y quiero compartirla contigo, aunque tal vez suene un poco raro, creo que es solo el comienzo de algo muy grande. Veo un futuro increíble trabajando en esto y, sobre todo, viviendo una vida llena de amor a tu lado. Mi amor, guarda este enlace hasta que seamos esposos, para que podamos mirar atrás y recordar juntos el primer paso en esto. Te amo y planeo amarte toda mi vida, toma esto como una muestra de ello ❤️</p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
